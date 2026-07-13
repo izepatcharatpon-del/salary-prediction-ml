@@ -31,6 +31,11 @@ Python, pandas, scikit-learn, joblib, Jupyter (originally run via Docker `jupyte
 docker run -p 8888:8888 -v "${PWD}:/home/jovyan/work/ProjectML" jupyter/datascience-notebook
 ```
 
-## Note on model files
+## Model files (Git LFS)
 
-`random_forests/model/model_rf.joblib` is excluded from this repo because it exceeds GitHub’s 100MB file limit. Re-run `random_forests/step3_train_model.ipynb` to regenerate it.
+Trained `.joblib` models are stored with **Git LFS** (Random Forest alone is >100MB).
+
+```bash
+git lfs install
+git clone https://github.com/izepatcharatpon-del/G22-high-salary-ml.git
+```
