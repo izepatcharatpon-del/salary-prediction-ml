@@ -1,2 +1,3 @@
-*
-!.gitignore
+﻿# Track generated artifacts for portfolio
+.ipynb_checkpoints/
+

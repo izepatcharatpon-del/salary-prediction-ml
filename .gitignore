@@ -5,9 +5,6 @@ __pycache__/
 .venv/
 .env
 
-# Oversized artifacts (GitHub hard limit = 100MB)
-random_forests/model/model_rf.joblib
-
 # OS
 .DS_Store
 Thumbs.db
