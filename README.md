@@ -8,13 +8,15 @@ End-to-end binary classification pipeline predicting high-salary labels from dem
 - Splits: `high_salary.train.csv` / `.test.csv` / `.live.csv`
 - Target: `label` (0/1)
 
-## Models compared
+## Models compared (test set, n=4792)
 
-| Folder | Model | Notes |
-| --- | --- | --- |
-| `k_nearest_neighbor_4techniques/` | KNN + GridSearch | saved as `model_Knn.joblib` |
-| `random_forests/` | RandomForestClassifier | ~79% test accuracy |
-| `artificial_neural_network/` | MLPClassifier (ANN) | ~81% test accuracy |
+| Model | Test accuracy | Weighted F1 | Saved model |
+| --- | ---: | ---: | --- |
+| ANN (`MLPClassifier`) | **81.0%** | 0.810 | `model_ann.joblib` |
+| KNN (`n_neighbors=21`, GridSearch) | **79.9%** | 0.800 | `model_Knn.joblib` |
+| Random Forest | **79.3%** | 0.793 | `model_rf.joblib` |
+
+Metrics come from each model’s evaluate notebook (`accuracy_score` + `classification_report` on `features.test.csv`).
 
 Pipeline per model: process data → train → (feature importance) → evaluate → live predict.
 
