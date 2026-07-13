@@ -39,5 +39,5 @@ Trained `.joblib` models are stored with **Git LFS** (Random Forest alone is >10
 
 ```bash
 git lfs install
-git clone https://github.com/izepatcharatpon-del/G22-high-salary-ml.git
+git clone https://github.com/izepatcharatpon-del/salary-prediction-ml.git
 ```
