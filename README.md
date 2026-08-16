@@ -1,4 +1,4 @@
-# High-Salary Classification (Group G22)
+# High-Salary Classification 
 
 End-to-end **binary classification** pipeline that predicts whether a person is in the **high-salary** group (`label` = 0/1) from demographic / employment features.
 
