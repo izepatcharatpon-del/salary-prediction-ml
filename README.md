@@ -2,7 +2,7 @@
 
 End-to-end **binary classification** pipeline that predicts whether a person is in the **high-salary** group (`label` = 0/1) from demographic / employment features.
 
-Course project · Mae Fah Luang University · Nov 2025  
+Course project · Nov 2025  
 Author: [izepatcharatpon-del](https://github.com/izepatcharatpon-del)
 
 ---
